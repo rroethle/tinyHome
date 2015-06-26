@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Stationary Tiny Home Calculator</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class = "container">
+<form id= "inputName">
+<fieldset>
+<legend>Stationary Tiny Home Calculator</legend>
+<div id="calculated">
+Cost: <br>
+<input type = "text" name="cost" id="cost" required placeholder = "Cost" value = "0" ></br>
+Square Feet: <br>
+<input type = "number" name="squareFeet" id="squareFeet" required placeholder = "Square Feet" value = "0" ></br>
+</div>
+<div id="variables">
+Lumber: <br>
+<input type = "number" name="lumber" id="lumber" required placeholder = "Lumber" value = "0" ></br>
+Brick: <br>
+<input type = "number" name="brick" id="brick" required placeholder = "Brick" value = "0"></br>
+Concrete: <br>
+<input type = "number" name="concrete" id="concrete" required placeholder = "Concrete" value = "0"></br>
+Decor: <br>
+<input type = "number" name="decor" id="decor" required placeholder = "Decor" value = "0"></br>
+</div>
+</fieldset>
+</form>
+<div>
+<img id = "house" src = "images/house.png" alt = "House">
+</div>
+</div>
+
+<script src="js/calculator.js"></script>
+</body>
+</html>
