@@ -12,28 +12,31 @@
 <fieldset>
 <legend>Stationary Tiny Home Calculator</legend>
 <div id="calculated">
-Cost: <br>
+<label for="cost">Cost</label>
 <input type = "text" name="cost" id="cost" required placeholder = "Cost" value = "0" ></br>
-Square Feet: <br>
+<label for="squareFeet">Square Feet</label>
 <input type = "number" name="squareFeet" id="squareFeet" required placeholder = "Square Feet" value = "0" ></br>
 </div>
 <div id="variables">
-Lumber: <br>
+<label for="lumber">Lumber</label>
 <input type = "number" name="lumber" id="lumber" required placeholder = "Lumber" value = "0" ></br>
-Brick: <br>
+<label for="brick">Brick</label>
 <input type = "number" name="brick" id="brick" required placeholder = "Brick" value = "0"></br>
-Concrete: <br>
+<label for="concrete">Concrete</label>
 <input type = "number" name="concrete" id="concrete" required placeholder = "Concrete" value = "0"></br>
-Decor: <br>
+<label for="decor">Decor</label>
 <input type = "number" name="decor" id="decor" required placeholder = "Decor" value = "0"></br>
 </div>
 </fieldset>
 </form>
+<!-- big-house and house will show or hide based on the squareFeet response -->
 <div>
+<p id = "big-house">HOUSE IS TOO BIG TOO SHOW! THAT IS A BIG TINY HOUSE!</p>
 <img id = "house" src = "images/house.png" alt = "House">
 </div>
 </div>
-
+<!-- numeral is a number/currency formatting library. Not used for this project, but commented out for later use
+<script src="js/numeral.min.js"></script> -->
 <script src="js/calculator.js"></script>
 </body>
 </html>

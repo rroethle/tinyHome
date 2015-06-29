@@ -1,31 +1,38 @@
-input{
-	margin: 0px 10px;
-}
-
-#calculated {
-	display: inline-block;
-	width: 50%;
-}
-
-#variables {
-	display: inline-block;
-	width: 40%;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
 
 legend{
 	font-size: 3em;
 	text-align: center;
 }
 
-.container {
-	width: 90%;
-	margin: auto auto;
+input{
+	display: inline-block;
+	margin: 5px 10px;
+}
+
+/* removes spinners from number inputs because spin buttons don't play nice with my user verification */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+label {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+}
+
+/* id styles for specific elements
+calculated and variables aligns divs side by side
+house centers image when shown
+*/
+#calculated {
+	vertical-align: top;
+	display: inline-block;
+}
+
+#variables {
+	display: inline-block;
 }
 
 #house {
@@ -33,5 +40,14 @@ legend{
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 25px;
-	
 }
+
+/* keeps content centered on page when width is resized */
+.container {
+	width: 90%;
+	margin: auto auto;
+}
+
+
+
+
